@@ -5,13 +5,6 @@ from flask.json import jsonify
 
 app = Flask(__name__)
 
-POSTGRES = {
-    'password'
-    'database': 'my_database',
-    'host': 'localhost',
-    'port': '5432',
-}
-
 app.config['DEBUG'] = True
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/my_database'
 db.init_app(app)
